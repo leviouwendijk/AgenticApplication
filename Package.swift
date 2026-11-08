@@ -9,7 +9,7 @@ let packagedirectory = URL(
 
 let infoPlistPath = packagedirectory.appendingPathComponent(
     "Support/Info.plist"
-    ).path
+).path
 
 let package = Package(
     name: "AgenticCLI",
@@ -29,16 +29,9 @@ let package = Package(
             url: "https://github.com/leviouwendijk/Agentic.git",
             branch: "master"
         ),
+
         .package(
-            url: "https://github.com/leviouwendijk/AgenticSkills.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/leviouwendijk/AgenticExecution.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/leviouwendijk/AgenticTools.git",
+            url: "https://github.com/leviouwendijk/AgenticProviders.git",
             branch: "master"
         ),
         .package(
@@ -53,14 +46,19 @@ let package = Package(
             url: "https://github.com/leviouwendijk/AgenticInterfaces.git",
             branch: "master"
         ),
-        // Temporarily disabled until AgenticAdapters is rebuilt around
-        // inference adaptation rather than provider-native model execution.
-        // .package(
-        //     url: "https://github.com/leviouwendijk/AgenticAdapters.git",
-        //     branch: "master"
-        // ),
+
         .package(
-            url: "https://github.com/leviouwendijk/AgenticProviders.git",
+            url: "https://github.com/leviouwendijk/Milieu.git",
+            branch: "master"
+        ),
+
+        // additional domains
+        .package(
+            url: "https://github.com/leviouwendijk/UniFi.git",
+            branch: "master"
+        ),
+        .package(
+            url: "https://github.com/leviouwendijk/AgenticIO.git",
             branch: "master"
         ),
         .package(
@@ -71,27 +69,36 @@ let package = Package(
             url: "https://github.com/leviouwendijk/AgenticMedia.git",
             branch: "master"
         ),
+        .package(
+            url: "https://github.com/leviouwendijk/AgenticAccounting.git",
+            branch: "master"
+        ),
+        .package(
+            url: "https://github.com/leviouwendijk/AgenticPDF.git",
+            branch: "master"
+        ),
     ],
     targets: [
         .executableTarget(
             name: "AgenticCLI",
             dependencies: [
+                // core lib
                 .product(
                     name: "Agentic",
                     package: "Agentic"
                 ),
                 .product(
-                    name: "AgenticSkills",
-                    package: "AgenticSkills"
+                    name: "Milieu",
+                    package: "Milieu"
                 ),
+
+                // models
                 .product(
-                    name: "AgenticExecution",
-                    package: "AgenticExecution"
+                    name: "AgenticModels",
+                    package: "Agentic"
                 ),
-                .product(
-                    name: "AgenticTools",
-                    package: "AgenticTools"
-                ),
+
+                // runtime, host, tui
                 .product(
                     name: "AgenticRuntime",
                     package: "AgenticRuntime"
@@ -108,6 +115,72 @@ let package = Package(
                     name: "AgenticInterfaces",
                     package: "AgenticInterfaces"
                 ),
+
+                // domains
+                // [core]
+                .product(
+                    name: "AgenticStandard",
+                    package: "Agentic"
+                ),
+                .product(
+                    name: "AgenticHarness",
+                    package: "Agentic"
+                ),
+                .product(
+                    name: "AgenticMath",
+                    package: "Agentic"
+                ),
+                .product(
+                    name: "AgenticAssertions",
+                    package: "Agentic"
+                ),
+                // [repositories]
+                .product(
+                    name: "AgenticIO",
+                    package: "AgenticIO"
+                ),
+                .product(
+                    name: "AgenticGit",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticSwift",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticWeb",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticAppleServices",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticUniFi",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "UniFi",
+                    package: "UniFi"
+                ),
+                .product(
+                    name: "UniFiPlanning",
+                    package: "UniFi"
+                ),
+                .product(
+                    name: "AgenticMedia",
+                    package: "AgenticMedia"
+                ),
+                .product(
+                    name: "AgenticMediaApple",
+                    package: "AgenticMedia"
+                ),
+                .product(
+                    name: "AgenticAccounting",
+                    package: "AgenticAccounting"
+                ),
+
+                // model providers and gateways
                 .product(
                     name: "AgenticApple",
                     package: "AgenticProviders"
@@ -121,20 +194,8 @@ let package = Package(
                     package: "AgenticProviders"
                 ),
                 .product(
-                    name: "AgenticDomains",
-                    package: "AgenticDomains"
-                ),
-                .product(
-                    name: "AgenticAppleServices",
-                    package: "AgenticDomains"
-                ),
-                .product(
-                    name: "AgenticMedia",
-                    package: "AgenticMedia"
-                ),
-                .product(
-                    name: "AgenticMediaApple",
-                    package: "AgenticMedia"
+                    name: "AgenticHYAI",
+                    package: "AgenticProviders"
                 ),
             ],
             linkerSettings: [
@@ -150,3 +211,30 @@ let package = Package(
         ),
     ]
 )
+
+for target in package.targets {
+    switch target.type {
+    case .regular, .executable, .test, .macro:
+        var settings = target.swiftSettings ?? []
+
+        settings.append(
+            .treatAllWarnings(as: .error)
+        )
+
+        settings.append(
+            .unsafeFlags(
+                [
+                    "-continue-building-after-errors"
+                ]
+            )
+        )
+
+        target.swiftSettings = settings
+
+    case .plugin, .system, .binary:
+        break
+
+    @unknown default:
+        break
+    }
+}
