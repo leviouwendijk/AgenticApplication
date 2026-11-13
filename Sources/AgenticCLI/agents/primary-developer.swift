@@ -90,7 +90,12 @@ enum PrimaryDeveloper {
                 SystemIO.self,
                 Git.self,
                 SwiftLang.self,
-            ]
+            ],
+            agents: .init(
+                members: [
+                    MainWorker.self
+                ]
+            )
         ),
         visible: .init(
             tools: .init(
@@ -117,6 +122,16 @@ enum PrimaryDeveloper {
                     Git.Tools.Push.self,
                     Git.Tools.Pull.self,
 
+                    SwiftLang.Tools.Build.self,
+                    SwiftLang.Tools.RunProduct.self,
+
+                    SwiftLang.Tools.Parse.self,
+                    SwiftLang.Tools.PackageUpdate.self,
+
+                    // SwiftLang.Tools.LintFiles.self,
+                    // SwiftLang.Tools.LintPackage.self,
+                    // SwiftLang.Tools.LintSource.self,
+
                     // Git.Tools.RepositoryState.self,
                     // Git.Tools.Diff.self,
                     // Git.Tools.PrepareCommit.self,
@@ -128,15 +143,34 @@ enum PrimaryDeveloper {
                     // SwiftLang.Tools.PackageUpdate.self,
                     // SwiftLang.Tools.RunProduct.self,
                 ]
+            ),
+            agents: .init(
+                members: [
+                    MainWorker.self
+                ]
             )
         )
     )
 
-    static let modelSelection = AgentModelSelection(
-        purpose: .executor,
-        preferences: .init(
-            preferredProfileIdentifier: .hyai_auto,
-            gateway: .hyai
+    static let delegation = AgentDelegationPolicy.bounded(
+        allowedAgents: .init(
+            members: [
+                MainWorker.self
+            ]
+        ),
+        limits: .init(
+            depth: 1,
+            children: 30,
+            descendants: 30,
+            concurrentChildren: 30
         )
     )
+
+    // static let modelSelection = AgentModelSelection(
+    //     purpose: .executor,
+    //     preferences: .init(
+    //         preferredProfileIdentifier: .hyai_auto,
+    //         gateway: .hyai
+    //     )
+    // )
 }

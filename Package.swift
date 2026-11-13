@@ -112,6 +112,10 @@ let package = Package(
                     package: "AgenticHost"
                 ),
                 .product(
+                    name: "AgenticTUI",
+                    package: "AgenticHost"
+                ),
+                .product(
                     name: "AgenticInterfaces",
                     package: "AgenticInterfaces"
                 ),
@@ -157,6 +161,10 @@ let package = Package(
                 ),
                 .product(
                     name: "AgenticUniFi",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticProcesses",
                     package: "AgenticDomains"
                 ),
                 .product(

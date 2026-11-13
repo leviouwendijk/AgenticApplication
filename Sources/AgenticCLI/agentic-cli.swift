@@ -16,6 +16,7 @@ import AgenticUniFi
 import AgenticMedia
 import AgenticAccounting
 import AgenticPDF
+import AgenticProcesses
 
 // models
 import AgenticModels
@@ -29,6 +30,7 @@ import AgenticHYAI
 // runtime
 import AgenticRuntime
 import AgenticCommandLine
+import AgenticTUI
 import AgenticHost
 import AgenticInterfaces
 import AgenticMediaApple
@@ -75,8 +77,7 @@ enum AgenticCLI {
             )
         }
 
-        static let voiceInputProvider: (any VoiceInputProvider)? =
-            AppleVoiceInputProvider()
+        static let voiceInputProvider: (any VoiceInputProvider)? = AppleVoiceInputProvider()
 
         static let application = Agentic.application(
             "agentic",
@@ -98,9 +99,14 @@ enum AgenticCLI {
             install(AgenticUniFi.UniFi.self)
             install(Media.self)
             install(PDF.self)
+            install(Shell.self)
+            install(Sessions.self)
 
             install(PrimaryDeveloper.self)
             install(GeneralPurposeAgent.self)
+
+            install(MainOrchestrator.self)
+            install(MainWorker.self)
 
             launches {
                 agent(
@@ -159,6 +165,6 @@ enum AgenticCLI {
     }
 
     static func main() async {
-        await Agentic.CommandLine<Application>.main()
+        await Agentic.TUICommandLine<Application>.main()
     }
 }
