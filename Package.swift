@@ -138,6 +138,10 @@ let package = Package(
                     name: "AgenticAssertions",
                     package: "Agentic"
                 ),
+                .product(
+                    name: "AgenticTasks",
+                    package: "Agentic"
+                ),
                 // [repositories]
                 .product(
                     name: "AgenticIO",
@@ -165,6 +169,10 @@ let package = Package(
                 ),
                 .product(
                     name: "AgenticProcesses",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticDevelopment",
                     package: "AgenticDomains"
                 ),
                 .product(
@@ -203,6 +211,14 @@ let package = Package(
                 ),
                 .product(
                     name: "AgenticHYAI",
+                    package: "AgenticProviders"
+                ),
+                .product(
+                    name: "AgenticOpenAI",
+                    package: "AgenticProviders"
+                ),
+                .product(
+                    name: "AgenticAnthropic",
                     package: "AgenticProviders"
                 ),
             ],

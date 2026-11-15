@@ -7,6 +7,8 @@ import Milieu
 import AgenticStandard
 import AgenticHarness
 import AgenticMath
+import AgenticAssertions
+import AgenticTasks
 import AgenticIO
 import AgenticSwift
 import AgenticGit
@@ -17,6 +19,7 @@ import AgenticMedia
 import AgenticAccounting
 import AgenticPDF
 import AgenticProcesses
+import AgenticDevelopment
 
 // models
 import AgenticModels
@@ -26,6 +29,8 @@ import AgenticApple
 import AgenticAWS
 import AgenticOllama
 import AgenticHYAI
+import AgenticOpenAI
+import AgenticAnthropic
 
 // runtime
 import AgenticRuntime
@@ -42,6 +47,13 @@ private let bedrockProfile = BedrockModelProfiles.profile(
     model: bedrockModel,
     modelID: KnownModel.anthropic.`claude_opus_4.6`,
     title: "Claude Opus 4.6",
+    purposes: [
+        .executor,
+        .planner,
+        .coder,
+        .researcher,
+        .reviewer,
+    ],
     capabilities: [
         .text,
         .tool_use,
@@ -89,6 +101,8 @@ enum AgenticCLI {
             install(Standard.self)
             install(Harness.self)
             install(Math.self)
+            install(Assertions.self)
+            install(Tasks.self)
             install(Accounting.self)
 
             install(SystemIO.self)
@@ -101,12 +115,9 @@ enum AgenticCLI {
             install(PDF.self)
             install(Shell.self)
             install(Sessions.self)
+            install(Development.self)
 
             install(PrimaryDeveloper.self)
-            install(GeneralPurposeAgent.self)
-
-            install(MainOrchestrator.self)
-            install(MainWorker.self)
 
             launches {
                 agent(
@@ -132,11 +143,35 @@ enum AgenticCLI {
             //     CoreSkillProvider()
             // )
 
+            // Agents declare a purpose; models are bound here, per purpose.
+            // A purpose without a binding falls back to the default.
             modelSelection(
                 default: .init(
                     preferredModelID: KnownModel.deepseek.v4_flash,
                     gateway: .hyai
                 ),
+                purposes: [
+                    // Orchestrator, SwiftLang Planner: decomposition and acceptance.
+                    .planner: .init(
+                        preferredModelID: KnownModel.deepseek.v4_pro,
+                        gateways: [.hyai]
+                    ),
+                    // Worker, SwiftLang Implementer and Renamer: bounded implementation.
+                    .coder: .init(
+                        preferredModelID: KnownModel.deepseek.v4_flash,
+                        gateways: [.hyai]
+                    ),
+                    // Scout, SwiftLang Explorer: high-volume reading; cheap and fast.
+                    .researcher: .init(
+                        preferredModelID: KnownModel.deepseek.v4_flash,
+                        gateways: [.hyai]
+                    ),
+                    // Reviewers and SwiftLang Verifier: acceptance judgment; strong.
+                    .reviewer: .init(
+                        preferredModelID: KnownModel.deepseek.v4_pro,
+                        gateways: [.hyai]
+                    ),
+                ],
                 precedence: .default
             )
 
@@ -161,6 +196,13 @@ enum AgenticCLI {
                 )
             )
 
+            modelProvider(
+                OpenAIModelProvider()
+            )
+
+            modelProvider(
+                AnthropicModelProvider()
+            )
         }
     }
 

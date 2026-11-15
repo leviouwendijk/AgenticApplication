@@ -6,6 +6,9 @@ import AgenticAssertions
 import AgenticIO
 import AgenticGit
 import AgenticSwift
+import AgenticProcesses
+import AgenticRuntime // sessions domain
+import AgenticDevelopment
 
 @Agent
 enum PrimaryDeveloper {
@@ -90,10 +93,12 @@ enum PrimaryDeveloper {
                 SystemIO.self,
                 Git.self,
                 SwiftLang.self,
+                Shell.self,
+                Sessions.self,
             ],
             agents: .init(
                 members: [
-                    MainWorker.self
+                    Development.Agents.Worker.self
                 ]
             )
         ),
@@ -146,7 +151,7 @@ enum PrimaryDeveloper {
             ),
             agents: .init(
                 members: [
-                    MainWorker.self
+                    Development.Agents.Worker.self
                 ]
             )
         )
@@ -155,7 +160,7 @@ enum PrimaryDeveloper {
     static let delegation = AgentDelegationPolicy.bounded(
         allowedAgents: .init(
             members: [
-                MainWorker.self
+                Development.Agents.Worker.self
             ]
         ),
         limits: .init(
