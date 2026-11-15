@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "4e98e700ee52e1f188f2b03d6c1535dc92f39ccd"
+        "revision" : "e8a44d0630a309bb5942f934dfb77b2fcb8ad7c0"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c2035cded225f2ff23700f8b246e7c0a5e216b51"
+        "revision" : "59aff9626a7c0b723b5a4c0949db385485b41add"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "46cb6f2f50432b9786645cddfd3c1f104fa596e9"
+        "revision" : "210db3a8ccad51daf3d46a2b7097127d50203d25"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "dd3b381fa4b7067347ebf26b2f7246634e26600a"
+        "revision" : "03b54c177bc73f0612f5181c63fc1b20f8f358b9"
       }
     },
     {
@@ -61,7 +61,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticIO.git",
       "state" : {
         "branch" : "master",
-        "revision" : "e3d72a5317bb53b2d67d420ae6497d239338d524"
+        "revision" : "223973971c8b8a2ce564a1e296f25f506cc5afe0"
       }
     },
     {
@@ -88,7 +88,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticProviders.git",
       "state" : {
         "branch" : "master",
-        "revision" : "8fc6f5bd908c25bab4bbc2e680e421c314aaeb6a"
+        "revision" : "e0742ce3fe89a09bb3c8d022dab858717d789130"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1511b8111a206dad81e18879bc008f89adae8465"
+        "revision" : "baaf308e46fdee2bcdce24b91f8b5d54668cc415"
       }
     },
     {
@@ -574,7 +574,7 @@
       "location" : "https://github.com/leviouwendijk/Schema.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1ce1553b576483aeec8cc2975caeb6f8ac548d41"
+        "revision" : "af9a4e2d0b5da1239f53b405a3e04e636dd489c4"
       }
     },
     {
@@ -799,7 +799,7 @@
       "location" : "https://github.com/leviouwendijk/Workspace.git",
       "state" : {
         "branch" : "master",
-        "revision" : "546377843b224de53b2d77d6fc6dd94e346b1950"
+        "revision" : "23ecf90582ffaf3948e105c1b2fa5249d6b4ef4c"
       }
     },
     {
