@@ -123,6 +123,10 @@ let package = Package(
                 // domains
                 // [core]
                 .product(
+                    name: "AgenticSessions",
+                    package: "Agentic"
+                ),
+                .product(
                     name: "AgenticStandard",
                     package: "Agentic"
                 ),

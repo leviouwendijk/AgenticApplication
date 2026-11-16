@@ -1,5 +1,5 @@
 {
-  "originHash" : "9c6378e603b423765b801baca69d12c5fb4c80c79f0d52ff957be03a2925109d",
+  "originHash" : "a86dd3563348dcddab1da11c8822781ea3bf993b0985c9dc023aa84335f1be75",
   "pins" : [
     {
       "identity" : "accounting",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "e8a44d0630a309bb5942f934dfb77b2fcb8ad7c0"
+        "revision" : "3dfce2796f2c0f2fe298c05e8f7aac8e8814014d"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "59aff9626a7c0b723b5a4c0949db385485b41add"
+        "revision" : "8e9c994a77f590ddb0521fe6142712ec40a35eed"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "210db3a8ccad51daf3d46a2b7097127d50203d25"
+        "revision" : "48914676f1e1128a6769e43f802336fe635bde6a"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "03b54c177bc73f0612f5181c63fc1b20f8f358b9"
+        "revision" : "3770d9301bd2d7df413c42350c8a60e39399b156"
       }
     },
     {
@@ -88,7 +88,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticProviders.git",
       "state" : {
         "branch" : "master",
-        "revision" : "e0742ce3fe89a09bb3c8d022dab858717d789130"
+        "revision" : "ea930ea51f67256979b1145620b0c6ad6385967a"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "baaf308e46fdee2bcdce24b91f8b5d54668cc415"
+        "revision" : "51f8fb2f2153f47b1e8a37ac80165bad53eede20"
       }
     },
     {
@@ -466,7 +466,7 @@
       "location" : "https://github.com/leviouwendijk/Partition.git",
       "state" : {
         "branch" : "master",
-        "revision" : "75c760b64555f8b5ee170f6bc9f9e5cbf8590475"
+        "revision" : "ebf72db1007486eed70c852487ae01714dec5a08"
       }
     },
     {

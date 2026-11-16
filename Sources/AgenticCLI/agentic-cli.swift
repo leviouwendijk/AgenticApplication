@@ -5,6 +5,7 @@ import Milieu
 
 // domains
 import AgenticStandard
+import AgenticSessions
 import AgenticHarness
 import AgenticMath
 import AgenticAssertions

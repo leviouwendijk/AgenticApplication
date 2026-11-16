@@ -7,7 +7,7 @@ import AgenticIO
 import AgenticGit
 import AgenticSwift
 import AgenticProcesses
-import AgenticRuntime // sessions domain
+import AgenticSessions
 import AgenticDevelopment
 
 @Agent
