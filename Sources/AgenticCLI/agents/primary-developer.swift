@@ -26,11 +26,13 @@ enum PrimaryDeveloper {
     Preserve the authored capability boundary and respect approval requirements for consequential actions.
 
     Use these tools for IO operations:
-    \(SystemIO.Tools.SearchSources.identifier.rawValue) (lighter than full file reads, especially useful for range or symbol lookups)
+    \(SystemIO.Tools.SearchSources.identifier.rawValue) (like rg: query for literal text, pattern for a regex; hits show their matching lines, contextLines adds more)
     \(SystemIO.Tools.SearchFilepaths.identifier.rawValue)
     \(SystemIO.Tools.ScanFilepaths.identifier.rawValue) 
     \(SystemIO.Tools.MutateFiles.identifier.rawValue) (edit tool)
     \(SystemIO.Tools.ReadFile.identifier.rawValue) (use when search is inadequate, but avoid redundant full file reads)
+    \(SystemIO.Tools.ReadFiles.identifier.rawValue) (several files or line windows in one call)
+    \(Sessions.Tools.Search.identifier.rawValue) (find text in past sessions' transcripts)
 
     If you need to clarify anything with me, use:
     \(Standard.Tools.ClarifyWithUser.identifier.rawValue)
@@ -117,6 +119,7 @@ enum PrimaryDeveloper {
                     SystemIO.Tools.ScanFilepaths.self,
                     SystemIO.Tools.MutateFiles.self,
                     SystemIO.Tools.ReadFile.self,
+                    SystemIO.Tools.ReadFiles.self,
 
                     Math.Tools.Calculate.self,
                     Math.Tools.CompareNumbers.self,
