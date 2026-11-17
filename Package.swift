@@ -167,16 +167,9 @@ let package = Package(
                     name: "AgenticAppleServices",
                     package: "AgenticDomains"
                 ),
+                // ---
                 .product(
                     name: "AgenticUniFi",
-                    package: "AgenticDomains"
-                ),
-                .product(
-                    name: "AgenticProcesses",
-                    package: "AgenticDomains"
-                ),
-                .product(
-                    name: "AgenticDevelopment",
                     package: "AgenticDomains"
                 ),
                 .product(
@@ -186,6 +179,23 @@ let package = Package(
                 .product(
                     name: "UniFiPlanning",
                     package: "UniFi"
+                ),
+                // ---
+                .product(
+                    name: "AgenticProcesses",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticDevelopment",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticBusiness",
+                    package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticScheduling",
+                    package: "AgenticDomains"
                 ),
                 .product(
                     name: "AgenticMedia",

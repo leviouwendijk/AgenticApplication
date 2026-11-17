@@ -30,8 +30,7 @@ enum PrimaryDeveloper {
     \(SystemIO.Tools.SearchFilepaths.identifier.rawValue)
     \(SystemIO.Tools.ScanFilepaths.identifier.rawValue) 
     \(SystemIO.Tools.MutateFiles.identifier.rawValue) (edit tool)
-    \(SystemIO.Tools.ReadFile.identifier.rawValue) (use when search is inadequate, but avoid redundant full file reads)
-    \(SystemIO.Tools.ReadFiles.identifier.rawValue) (several files or line windows in one call)
+    \(SystemIO.Tools.ReadFiles.identifier.rawValue) (when search is inadequate; one path with an optional line window, or several in one call with reads; avoid redundant full file reads)
     \(Sessions.Tools.Search.identifier.rawValue) (find text in past sessions' transcripts)
 
     If you need to clarify anything with me, use:
@@ -61,7 +60,7 @@ enum PrimaryDeveloper {
         3. Make the smallest coherent mutation that satisfies the request.
         4. Search again only when needed to catch directly related remaining sites.
         5. Stop once the requested source change is complete.
-        6. Avoid repeated read_file calls just to confirm, bloating the context window expensively.
+        6. Avoid repeated read_files calls just to confirm, bloating the context window expensively.
 
     Do not keep investigating merely because adjacent issues or possible improvements exist. Do not broaden the objective without explicit instruction.
 
@@ -118,7 +117,6 @@ enum PrimaryDeveloper {
                     SystemIO.Tools.SearchFilepaths.self,
                     SystemIO.Tools.ScanFilepaths.self,
                     SystemIO.Tools.MutateFiles.self,
-                    SystemIO.Tools.ReadFile.self,
                     SystemIO.Tools.ReadFiles.self,
 
                     Math.Tools.Calculate.self,

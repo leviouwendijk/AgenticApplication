@@ -21,6 +21,8 @@ import AgenticAccounting
 import AgenticPDF
 import AgenticProcesses
 import AgenticDevelopment
+import AgenticBusiness
+import AgenticScheduling
 
 // models
 import AgenticModels
@@ -117,6 +119,8 @@ enum AgenticCLI {
             install(Shell.self)
             install(Sessions.self)
             install(Development.self)
+            install(Business.self)
+            install(Scheduling.self)
 
             install(PrimaryDeveloper.self)
 
