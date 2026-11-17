@@ -23,6 +23,13 @@ let package = Package(
                 "AgenticCLI",
             ]
         ),
+        // The application definition, shared with the macOS app.
+        .library(
+            name: "AgenticApplication",
+            targets: [
+                "AgenticApplication",
+            ]
+        ),
     ],
     dependencies: [
         .package(
@@ -83,8 +90,8 @@ let package = Package(
         ),
     ],
     targets: [
-        .executableTarget(
-            name: "AgenticCLI",
+        .target(
+            name: "AgenticApplication",
             dependencies: [
                 // core lib
                 .product(
@@ -110,18 +117,6 @@ let package = Package(
                 .product(
                     name: "AgenticHost",
                     package: "AgenticHost"
-                ),
-                .product(
-                    name: "AgenticCommandLine",
-                    package: "AgenticHost"
-                ),
-                .product(
-                    name: "AgenticTUI",
-                    package: "AgenticHost"
-                ),
-                .product(
-                    name: "AgenticInterfaces",
-                    package: "AgenticInterfaces"
                 ),
 
                 // domains
@@ -242,6 +237,16 @@ let package = Package(
                 .product(
                     name: "AgenticAnthropic",
                     package: "AgenticProviders"
+                ),
+            ]
+        ),
+        .executableTarget(
+            name: "AgenticCLI",
+            dependencies: [
+                "AgenticApplication",
+                .product(
+                    name: "AgenticTUI",
+                    package: "AgenticHost"
                 ),
             ],
             linkerSettings: [
