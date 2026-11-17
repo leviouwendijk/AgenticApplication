@@ -39,6 +39,7 @@ import AgenticAnthropic
 // runtime
 import AgenticRuntime
 import AgenticHost
+import AgenticInterfaces
 import AgenticMediaApple
 
 private let bedrockModel = "us.anthropic.claude-opus-4-6-v1"

@@ -118,6 +118,10 @@ let package = Package(
                     name: "AgenticHost",
                     package: "AgenticHost"
                 ),
+                .product(
+                    name: "AgenticInterfaces",
+                    package: "AgenticInterfaces"
+                ),
 
                 // domains
                 // [core]
@@ -244,6 +248,10 @@ let package = Package(
             name: "AgenticCLI",
             dependencies: [
                 "AgenticApplication",
+                .product(
+                    name: "Agentic",
+                    package: "Agentic"
+                ),
                 .product(
                     name: "AgenticTUI",
                     package: "AgenticHost"
