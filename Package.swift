@@ -51,6 +51,10 @@ let package = Package(
             url: "https://github.com/leviouwendijk/Milieu.git",
             branch: "master"
         ),
+        .package(
+            url: "https://github.com/leviouwendijk/Frame.git",
+            branch: "master"
+        ),
 
         // additional domains
         .package(
@@ -196,6 +200,10 @@ let package = Package(
                 .product(
                     name: "AgenticScheduling",
                     package: "AgenticDomains"
+                ),
+                .product(
+                    name: "Frame",
+                    package: "Frame"
                 ),
                 .product(
                     name: "AgenticMedia",

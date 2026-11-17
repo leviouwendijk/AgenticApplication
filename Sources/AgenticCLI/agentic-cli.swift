@@ -1,6 +1,7 @@
 // core lib
 import Agentic
 import Foundation
+import Frame
 import Milieu
 
 // domains
@@ -72,25 +73,31 @@ enum AgenticCLI {
     struct Application:
         AgenticApplicationProviding,
         AgenticVoiceInputProviding,
-        AgenticSessionServicesProviding
+        AgenticSessionServicesProviding,
+        AgenticFrameModulesProviding
     {
         static func services(for sessionID: String?) throws -> ToolServices {
             _ = sessionID
 
+            var services = try ToolServices().inserting(
+                SchedulingConfigurationLoader.state()
+            )
+
             let address = EnvironmentExtractor.optional("UNIFI_GATEWAY") ?? "https://unifi.lan"
 
-            guard
-                let gateway = URL(string: address)
-            else {
-                return .init()
+            if let gateway = URL(string: address) {
+                let reader = try LocalFunc.unifi.reader(gateway: gateway)
+                services = try services.inserting(
+                    AgenticUniFi.UniFi.Runtime(reader: reader)
+                )
             }
 
-            let reader = try LocalFunc.unifi.reader(gateway: gateway)
-
-            return try ToolServices().inserting(
-                AgenticUniFi.UniFi.Runtime(reader: reader)
-            )
+            return services
         }
+
+        static let frameModules: [Frame.Module] = [
+            SchedulingFrame.module,
+        ]
 
         static let voiceInputProvider: (any VoiceInputProvider)? = AppleVoiceInputProvider()
 
