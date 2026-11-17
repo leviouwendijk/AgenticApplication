@@ -1,5 +1,5 @@
 {
-  "originHash" : "ea8b1a4a8db80a878357054866338edc4307502b42e70a68994d47b18c66efe6",
+  "originHash" : "a57e46f73531035cc1445f8cb8882b2b71c4d2bba37d66a1d22364bb2ca7bf4e",
   "pins" : [
     {
       "identity" : "accounting",
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "889b4b227c1300373479f415312f38b0d62543d3"
+        "revision" : "ccffb8345ef336a6469fa6e84aee7ffab4b58aeb"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1ef2c3d315029e911a1fb7c192a1501be05667a0"
+        "revision" : "c747872e023b6b89deaee96979991d9f05c36d4f"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "541e91456db39b272918c9cbffb04cfa971003b9"
+        "revision" : "7b147fa4ba55d1726616a3e42f6629a826875a03"
       }
     },
     {
@@ -403,7 +403,7 @@
       "location" : "https://github.com/leviouwendijk/Loggers.git",
       "state" : {
         "branch" : "master",
-        "revision" : "06054854c665d1994b9cc8269fe97d4a5f70f955"
+        "revision" : "da38d11275e0a4dec48babb7a044a79b3ba9c23c"
       }
     },
     {
