@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c2607fba8266e94a8feaad2ef2fc274953307237"
+        "revision" : "c8cce1d7b8dcfb0f63797478831f55679ee8b967"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1db39c5c3824c68fedca7526660ed7097e8bba9d"
+        "revision" : "18c07def0ed195aca4734cc1aa2131317a842099"
       }
     },
     {
