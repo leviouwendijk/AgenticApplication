@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "9cf60daaa2a5774ffba2db9831bf6377bf9c018d"
+        "revision" : "231729f42242e937c01aff95709ecacffc74aafa"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "424097869d17b4876e793c10db8210c4028ea866"
+        "revision" : "1ef2c3d315029e911a1fb7c192a1501be05667a0"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "39df9cb0bc209bf6ec75a3d670be14e8b0912ad6"
+        "revision" : "541e91456db39b272918c9cbffb04cfa971003b9"
       }
     },
     {
@@ -335,6 +335,15 @@
       }
     },
     {
+      "identity" : "ics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/ICS.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2f9fe8f0b9c74eefd69069038f8084f20014339b"
+      }
+    },
+    {
       "identity" : "images",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/leviouwendijk/Images.git",
@@ -574,7 +583,7 @@
       "location" : "https://github.com/leviouwendijk/Reporting.git",
       "state" : {
         "branch" : "master",
-        "revision" : "6e4e3b1c5fbebe758172231bc2f17bddbb129aef"
+        "revision" : "e2f97c57f3fe49149eef9abb12ac1b87aa75900d"
       }
     },
     {

@@ -4,8 +4,9 @@ import AgenticScheduling
 import Foundation
 
 /// Scheduling for a session: the home's `domains/scheduling.frame` over
-/// Apple Calendar. A missing or invalid file does not stop the session;
-/// the scheduling tools report it when used.
+/// Apple Calendar, with addresses and travel times from Apple Maps. A
+/// missing or invalid file does not stop the session; the scheduling tools
+/// report it when used.
 enum SchedulingConfigurationLoader {
     static func state(
         home: AgentHome = AgentHomeLocator().resolveHome()
@@ -19,7 +20,14 @@ enum SchedulingConfigurationLoader {
                 return .missing(expected: file.path)
             }
             let configuration = try SchedulingConfiguration(document: document)
-            return .loaded(configuration.runtime(sources: [EventKitCalendarSource()]))
+            return .loaded(configuration.runtime(
+                sources: [EventKitCalendarSource()],
+                resolver: MapKitPlaceResolver(
+                    cacheFile: home.layout.runtimeStorage.cachedir
+                        .appendingPathComponent("scheduling-places.json")
+                ),
+                travel: MapKitTravelEstimator()
+            ))
         } catch {
             return .invalid(
                 file: file.path,
