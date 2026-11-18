@@ -67,6 +67,26 @@ Then schedule with:
 agentic conversation --agent scheduling.agents.scheduler
 ```
 
+## Mail
+
+Mail reads the same configuration as the `email` command of the
+[Mail](https://github.com/leviouwendijk/Mail) library: every `.frame` file
+under `~/.config/mail`, at any depth. Set it up and verify it there first:
+
+```sh
+email example > ~/.config/mail/accounts.frame
+email check && email probe --all
+```
+
+See Mail's [configuration](https://github.com/leviouwendijk/Mail/blob/master/Documentation/configuration.md)
+and [access](https://github.com/leviouwendijk/Mail/blob/master/Documentation/access.md)
+documentation. In a conversation, an agent starts with no access to message
+content. It sees accounts and groups, and asks for what a task needs with
+`mail_request_access`, which you approve. Those grants last until the session
+ends. Sending follows each account's `sending` policy and asks you per message
+unless the account allows it. Passwords come from environment variables or
+the keychain, so `agentic` needs the same variables as your shell.
+
 ## Configuration files
 
 ```sh
