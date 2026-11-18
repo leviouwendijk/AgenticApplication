@@ -92,7 +92,7 @@ public struct PrimaryApplication:
         _ = sessionID
 
         var services = try ToolServices().inserting(
-            SchedulingConfigurationLoader.store()
+            Scheduling.ConfigurationStore.apple()
         )
         // Mail grants live for one session, starting empty: mail_request_access fills them.
         services = try services.inserting(Email.SessionAccess())
