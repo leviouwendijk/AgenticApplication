@@ -42,6 +42,16 @@ import AgenticHost
 import AgenticInterfaces
 import AgenticMediaApple
 
+/// Gateways tried, in order, when HYAI is not configured. Apple's on-device
+/// model is left out: it serves only when none of these can.
+private let fallbackGateways: [AgentModelGatewayIdentifier] = [
+    .hyai,
+    "anthropic_messages",
+    .aws_bedrock,
+    "openai_responses",
+    .ollama,
+]
+
 private let bedrockModel = "us.anthropic.claude-opus-4-6-v1"
 
 private let bedrockProfile = BedrockModelProfiles.profile(
@@ -154,32 +164,39 @@ public struct PrimaryApplication:
         // )
 
         // Agents declare a purpose; models are bound here, per purpose.
-        // A purpose without a binding falls back to the default.
+        // A purpose without a binding falls back to the default. Bindings
+        // allow fallback along `fallbackGateways`, so a missing HYAI_API_KEY
+        // routes to another configured provider instead of stopping the runtime.
         modelSelection(
             default: .init(
                 preferredModelID: KnownModel.deepseek.v4_flash,
-                gateway: .hyai
+                gateways: fallbackGateways,
+                allowsFallback: true
             ),
             purposes: [
                 // Orchestrator, SwiftLang Planner: decomposition and acceptance.
                 .planner: .init(
                     preferredModelID: KnownModel.deepseek.v4_pro,
-                    gateways: [.hyai]
+                    gateways: fallbackGateways,
+                    allowsFallback: true
                 ),
                 // Worker, SwiftLang Implementer and Renamer: bounded implementation.
                 .coder: .init(
                     preferredModelID: KnownModel.deepseek.v4_flash,
-                    gateways: [.hyai]
+                    gateways: fallbackGateways,
+                    allowsFallback: true
                 ),
                 // Scout, SwiftLang Explorer: high-volume reading; cheap and fast.
                 .researcher: .init(
                     preferredModelID: KnownModel.deepseek.v4_flash,
-                    gateways: [.hyai]
+                    gateways: fallbackGateways,
+                    allowsFallback: true
                 ),
                 // Reviewers and SwiftLang Verifier: acceptance judgment; strong.
                 .reviewer: .init(
                     preferredModelID: KnownModel.deepseek.v4_pro,
-                    gateways: [.hyai]
+                    gateways: fallbackGateways,
+                    allowsFallback: true
                 ),
             ],
             precedence: .default
