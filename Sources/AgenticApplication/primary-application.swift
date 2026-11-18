@@ -105,6 +105,15 @@ public struct PrimaryApplication:
             Context.Store(home: AgentHomeLocator().resolveHome())
         )
 
+        // check_environment_symbol reports which names the dev env file declares, never values.
+        if let devEnv = EnvironmentExtractor.optional("DEV_ENV") {
+            services = try services.inserting(
+                EnvironmentSymbolSources([
+                    .init(label: "$DEV_ENV", url: URL(fileURLWithPath: devEnv)),
+                ])
+            )
+        }
+
         let address = EnvironmentExtractor.optional("UNIFI_GATEWAY") ?? "https://unifi.lan"
 
         if let gateway = URL(string: address) {

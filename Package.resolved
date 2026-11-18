@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f106e39fd8587816acd3077d46ab5958578f5fe8"
+        "revision" : "e3ada3972312faa68bd1c4627b4d3cd8df81b158"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "d083e5065239f035f2187dbbbdbd023dbd700d4f"
+        "revision" : "20cbf3e8fa0dfe6c728c42481caa490709a55670"
       }
     },
     {
@@ -421,7 +421,7 @@
       "location" : "https://github.com/leviouwendijk/Mail.git",
       "state" : {
         "branch" : "master",
-        "revision" : "21d375f8d2b7ee8795e93dbb4ab7961d2f016512"
+        "revision" : "29d504110334871a434383a2dffbd5daa03c3acb"
       }
     },
     {
@@ -466,7 +466,7 @@
       "location" : "https://github.com/leviouwendijk/Milieu.git",
       "state" : {
         "branch" : "master",
-        "revision" : "5b6211d7b2207c8b999012584c48a33f25f15668"
+        "revision" : "8b707f48391112c86eed1c26ab354e82343f24d6"
       }
     },
     {
