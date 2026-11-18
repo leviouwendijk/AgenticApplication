@@ -94,6 +94,8 @@ public struct PrimaryApplication:
         var services = try ToolServices().inserting(
             SchedulingConfigurationLoader.store()
         )
+        // Mail grants live for one session, starting empty: mail_request_access fills them.
+        services = try services.inserting(Email.SessionAccess())
         // frame_check reads what this program decodes, not a stale file.
         services = try services.inserting(
             FrameLang.Modules(compiled: [FrameAgenticModule.module, ContextFrame.module] + frameModules)

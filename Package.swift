@@ -210,7 +210,7 @@ let package = Package(
                 ),
                 .product(
                     name: "AgenticFrame",
-                    package: "AgenticDomains"
+                    package: "Agentic"
                 ),
                 .product(
                     name: "AgenticConfiguration",
