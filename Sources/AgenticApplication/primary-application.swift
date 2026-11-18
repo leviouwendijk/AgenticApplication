@@ -107,6 +107,15 @@ public struct PrimaryApplication:
         SchedulingFrame.module,
     ]
 
+    public static let frameExamples: [AgenticFrameExample] = [
+        .init(
+            name: "scheduling",
+            path: "domains/\(SchedulingFrame.fileName)",
+            summary: "Scheduling: participants, calendars, places and defaults.",
+            text: SchedulingFrame.example
+        ),
+    ]
+
     public static let voiceInputProvider: (any VoiceInputProvider)? = AppleVoiceInputProvider()
 
     public static let application = Agentic.application(
