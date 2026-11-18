@@ -201,6 +201,10 @@ let package = Package(
                     package: "AgenticDomains"
                 ),
                 .product(
+                    name: "AgenticFrame",
+                    package: "AgenticDomains"
+                ),
+                .product(
                     name: "Frame",
                     package: "Frame"
                 ),

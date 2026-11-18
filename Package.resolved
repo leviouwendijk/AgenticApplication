@@ -1,5 +1,5 @@
 {
-  "originHash" : "a57e46f73531035cc1445f8cb8882b2b71c4d2bba37d66a1d22364bb2ca7bf4e",
+  "originHash" : "77153ee47a0e09d3fe2716071b286ca0fdd60fe1fd10647d659da6d388886ea1",
   "pins" : [
     {
       "identity" : "accounting",
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c641c680c6e367466279673a6903ac2ce9058f8e"
+        "revision" : "8287ea7d6cf8a8a416e9058f2d45e68e5a793fa8"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c69f4113be62dc1881110ec12561d5ad894945d8"
+        "revision" : "5975e539b90ec9c0bcb4fdeef48b133bd0337d4d"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "38fdbac82f7d083f79184190abee067c1b16f132"
+        "revision" : "7b4dad02eafce49916e5de12e6c8e939da7de2aa"
       }
     },
     {

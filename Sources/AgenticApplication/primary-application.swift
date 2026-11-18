@@ -24,6 +24,7 @@ import AgenticProcesses
 import AgenticDevelopment
 import AgenticBusiness
 import AgenticScheduling
+import AgenticFrame
 
 // models
 import AgenticModels
@@ -90,6 +91,10 @@ public struct PrimaryApplication:
         var services = try ToolServices().inserting(
             SchedulingConfigurationLoader.state()
         )
+        // frame_check reads what this program decodes, not a stale file.
+        services = try services.inserting(
+            FrameLang.Modules(compiled: [FrameAgenticModule.module] + frameModules)
+        )
 
         let address = EnvironmentExtractor.optional("UNIFI_GATEWAY") ?? "https://unifi.lan"
 
@@ -145,6 +150,7 @@ public struct PrimaryApplication:
         install(Development.self)
         install(Business.self)
         install(Scheduling.self)
+        install(FrameLang.self)
 
         install(PrimaryDeveloper.self)
 
