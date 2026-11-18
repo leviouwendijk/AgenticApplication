@@ -69,6 +69,10 @@ let package = Package(
             branch: "master"
         ),
         .package(
+            url: "https://github.com/leviouwendijk/IO.git",
+            branch: "master"
+        ),
+        .package(
             url: "https://github.com/leviouwendijk/AgenticIO.git",
             branch: "master"
         ),
@@ -203,6 +207,10 @@ let package = Package(
                 .product(
                     name: "AgenticFrame",
                     package: "AgenticDomains"
+                ),
+                .product(
+                    name: "IO",
+                    package: "IO"
                 ),
                 .product(
                     name: "Frame",

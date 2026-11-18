@@ -89,7 +89,7 @@ public struct PrimaryApplication:
         _ = sessionID
 
         var services = try ToolServices().inserting(
-            SchedulingConfigurationLoader.state()
+            SchedulingConfigurationLoader.store()
         )
         // frame_check reads what this program decodes, not a stale file.
         services = try services.inserting(
