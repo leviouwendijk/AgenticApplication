@@ -1,5 +1,5 @@
 {
-  "originHash" : "42411815248a493a0f6598f80840ecb26a34c0daca3c7d6a36eddd45dbab691f",
+  "originHash" : "b8ca796da6a12069231854212ca9c65f32185f644e7c3ad146a03b7d9499c9ca",
   "pins" : [
     {
       "identity" : "accounting",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "9859e720e9bc87a3ce90f24fc2f0083ec65b8c96"
+        "revision" : "46adedcbdb58d101f7bec06321c6c21d6c6444ec"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "95408a401918798ec9237f7c10d29668358da6bf"
+        "revision" : "db677e0d00dd8fea23e0e46a0d7d9c1c4be352ea"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "cdd7780ed2886c8df5d20649a4a42d0238daf89e"
+        "revision" : "a46ef52be02ec6c8bac2e96c0f83c80b0a8bb193"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ff20af430c08141262bb8a5f05b635929559fa06"
+        "revision" : "d15de070dc1b840da6ed1e2d9410aee4b14e6298"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c1c7e1ea57a781491db75fc531206e023d3246ee"
+        "revision" : "78ff641b582949a570d005403761a0595fc87c09"
       }
     },
     {
@@ -268,7 +268,7 @@
       "location" : "https://github.com/leviouwendijk/Frame.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f86a019072fde4c8640f7b89a51c50c79f36b3ad"
+        "revision" : "c7a53f44bf9b6fdd25217cd0e80d42ce4c5cc7d5"
       }
     },
     {
@@ -413,6 +413,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "8f3b35eadca38087a3634402deba4cd444fc3a13"
+      }
+    },
+    {
+      "identity" : "mail",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Mail.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "aa11f1be4bf9944b8d6302b4265e44aba6275286"
       }
     },
     {

@@ -205,8 +205,20 @@ let package = Package(
                     package: "AgenticDomains"
                 ),
                 .product(
+                    name: "AgenticMail",
+                    package: "AgenticDomains"
+                ),
+                .product(
                     name: "AgenticFrame",
                     package: "AgenticDomains"
+                ),
+                .product(
+                    name: "AgenticConfiguration",
+                    package: "Agentic"
+                ),
+                .product(
+                    name: "AgenticContext",
+                    package: "Agentic"
                 ),
                 .product(
                     name: "IO",

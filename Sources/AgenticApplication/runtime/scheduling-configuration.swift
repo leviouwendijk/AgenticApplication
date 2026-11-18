@@ -1,3 +1,4 @@
+import AgenticConfiguration
 import AgenticAppleServices
 import AgenticRuntime
 import AgenticScheduling

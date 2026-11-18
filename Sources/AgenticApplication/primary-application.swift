@@ -24,7 +24,10 @@ import AgenticProcesses
 import AgenticDevelopment
 import AgenticBusiness
 import AgenticScheduling
+import AgenticMail
 import AgenticFrame
+import AgenticConfiguration
+import AgenticContext
 
 // models
 import AgenticModels
@@ -93,7 +96,11 @@ public struct PrimaryApplication:
         )
         // frame_check reads what this program decodes, not a stale file.
         services = try services.inserting(
-            FrameLang.Modules(compiled: [FrameAgenticModule.module] + frameModules)
+            FrameLang.Modules(compiled: [FrameAgenticModule.module, ContextFrame.module] + frameModules)
+        )
+        // The home's context/ files; `.always` entries reach every agent.
+        services = try services.inserting(
+            Context.Store(home: AgentHomeLocator().resolveHome())
         )
 
         let address = EnvironmentExtractor.optional("UNIFI_GATEWAY") ?? "https://unifi.lan"
@@ -150,7 +157,9 @@ public struct PrimaryApplication:
         install(Development.self)
         install(Business.self)
         install(Scheduling.self)
+        install(Email.self)
         install(FrameLang.self)
+        install(Context.self)
 
         install(PrimaryDeveloper.self)
 
