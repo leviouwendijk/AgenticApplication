@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "92f7c293c8f599571d0603c01ada063c5f80b749"
+        "revision" : "c398e71b1c3a21859561a525ac38f9e084759e94"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "3cf6b62f2aa37c7de0a8edbd54cd598ae4ff40c4"
+        "revision" : "bec2af414401c4d5e7d775d242358465e342c1e5"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "90438b4778a4e5b58c98b0674661c134ba0b17a4"
+        "revision" : "6f7031ffa062f90715bcdde88ce965c66537025b"
       }
     },
     {
@@ -421,7 +421,7 @@
       "location" : "https://github.com/leviouwendijk/Mail.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1f8ca6a7a0424e2ecd4cf0aa374292f038129c34"
+        "revision" : "c6bf0ebf8c2c345bdfc41d9543d2b68c6cd208cb"
       }
     },
     {
@@ -628,7 +628,7 @@
       "location" : "https://github.com/leviouwendijk/Sensitivity.git",
       "state" : {
         "branch" : "master",
-        "revision" : "a8583cbab54c0ddf629cd769f36341f1040b325c"
+        "revision" : "993ac35191a1285ea9ec847b1a25cb6fdd39430a"
       }
     },
     {
