@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "e7c3ab1380237e259efd1ce5f84e8e7323e01396"
+        "revision" : "ede9a453acfedf965def904d1656d9131bc3c5a0"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "34f8484f48ded5218a6f8a31babae572394131a1"
+        "revision" : "14b90a5c0c9f098d4e34cc7b00d2df1d6637f509"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "48bc351feb9951feec566d272a17abbd40026334"
+        "revision" : "664a310933c5acdaa68c9aeb71599486111384bd"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "049c548060ecfb0f01478fd41591bff4e72ba797"
+        "revision" : "195b0557771c95039a5e86177182accefd35ace4"
       }
     },
     {
@@ -421,7 +421,7 @@
       "location" : "https://github.com/leviouwendijk/Mail.git",
       "state" : {
         "branch" : "master",
-        "revision" : "966156e5344ed1d67204252c8bca00e0faf278ea"
+        "revision" : "751b8a0c3b6d1bcc3aa0507e813f3fb636d41a89"
       }
     },
     {
