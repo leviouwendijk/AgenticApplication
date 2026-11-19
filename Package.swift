@@ -92,10 +92,6 @@ let package = Package(
             url: "https://github.com/leviouwendijk/AgenticPDF.git",
             branch: "master"
         ),
-        .package(
-            url: "https://github.com/leviouwendijk/Sensitivity.git",
-            branch: "master"
-        ),
     ],
     targets: [
         .target(
@@ -227,10 +223,6 @@ let package = Package(
                 .product(
                     name: "AgenticSensitivity",
                     package: "Agentic"
-                ),
-                .product(
-                    name: "Sensitivity",
-                    package: "Sensitivity"
                 ),
                 .product(
                     name: "IO",

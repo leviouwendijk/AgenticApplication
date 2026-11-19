@@ -1,5 +1,5 @@
 {
-  "originHash" : "efde9a7e1ba63b45614e67586c37e3156828f034fd63d644d0de3d281bc5f857",
+  "originHash" : "41b995ed0798c540b97b861bfcfc76503b3c16f3b3b77457eadfc5394c824eec",
   "pins" : [
     {
       "identity" : "accounting",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "a0b98edb6317c1bffa2d613903d73bd4dac82142"
+        "revision" : "2129e0c6acf4d1629e05a3c5c68a9fc3bbe04e31"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "dd6da005d72725d5a649d106453303b862bc936c"
+        "revision" : "63a5715cf6551718e98d9c5d9e93ec4386c2a90b"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "82e5394b15b4a293e17438350b1bfdac2b3b7b59"
+        "revision" : "3cf6b62f2aa37c7de0a8edbd54cd598ae4ff40c4"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticInterfaces.git",
       "state" : {
         "branch" : "master",
-        "revision" : "812056be37a0095f2adb25ef7e958051b37ec225"
+        "revision" : "f2dae73553535f930b20d88b046600b85ea81f09"
       }
     },
     {
@@ -61,7 +61,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticIO.git",
       "state" : {
         "branch" : "master",
-        "revision" : "93706aba8baf5a018fa00038a2b8aeaa5f376c7a"
+        "revision" : "add1e9c9ec698012bbd0f4b859cb1e6c62b759c4"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "0f0c8dfad0c3083c95add80eb32cf8da9bd0c119"
+        "revision" : "90438b4778a4e5b58c98b0674661c134ba0b17a4"
       }
     },
     {
@@ -628,7 +628,7 @@
       "location" : "https://github.com/leviouwendijk/Sensitivity.git",
       "state" : {
         "branch" : "master",
-        "revision" : "a32c848ea15699f43f85c16abfedc70f0aa46ec3"
+        "revision" : "a8583cbab54c0ddf629cd769f36341f1040b325c"
       }
     },
     {
@@ -808,7 +808,7 @@
       "location" : "https://github.com/leviouwendijk/UniFi.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1393b6bb87549ea9751c22039c2bb10cce7e29dc"
+        "revision" : "1d890c2bf2fc492dfb3c788fbf4c174dbe3bf09f"
       }
     },
     {
