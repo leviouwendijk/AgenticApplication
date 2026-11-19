@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "790d81525efbe7d803853fe233656d1eaee47eea"
+        "revision" : "33225d02a078c7bbd0dd5638d1ff012dfd8fdaa0"
       }
     },
     {
@@ -107,6 +107,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "1849aa41c88d20c3174d0f3a1082b938c1345985"
+      }
+    },
+    {
+      "identity" : "apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Apple.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "80830dd2ca8a78bbfc46aa1b9bf0c7e276c05ed1"
       }
     },
     {
@@ -223,7 +232,7 @@
       "location" : "https://github.com/leviouwendijk/Errors.git",
       "state" : {
         "branch" : "master",
-        "revision" : "6ea0a9ebefd5a3a176f47fd016fe88110f99fc33"
+        "revision" : "ad3f44c682cbdf65bc9e096557b4af75fa3d5bb3"
       }
     },
     {
@@ -817,7 +826,7 @@
       "location" : "https://github.com/leviouwendijk/UniFi.git",
       "state" : {
         "branch" : "master",
-        "revision" : "332513bba9b9d66e51bdc22cf0b95a29c2f0db2b"
+        "revision" : "45d30ae5aeef96a381fc0d0cfb0265a83aeb3d8d"
       }
     },
     {
