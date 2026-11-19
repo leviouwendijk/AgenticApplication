@@ -204,7 +204,7 @@ public struct PrimaryApplication:
         // routes to another configured provider instead of stopping the runtime.
         modelSelection(
             default: .init(
-                preferredModelID: KnownModel.deepseek.v4_flash,
+                preferredModelID: KnownModel.deepseek.v4_pro,
                 gateways: fallbackGateways,
                 allowsFallback: true
             ),
@@ -217,13 +217,13 @@ public struct PrimaryApplication:
                 ),
                 // Worker, SwiftLang Implementer and Renamer: bounded implementation.
                 .coder: .init(
-                    preferredModelID: KnownModel.deepseek.v4_flash,
+                    preferredModelID: KnownModel.deepseek.v4_pro,
                     gateways: fallbackGateways,
                     allowsFallback: true
                 ),
-                // Scout, SwiftLang Explorer: high-volume reading; cheap and fast.
+                // Scout, SwiftLang Explorer: high-volume reading.
                 .researcher: .init(
-                    preferredModelID: KnownModel.deepseek.v4_flash,
+                    preferredModelID: KnownModel.deepseek.v4_pro,
                     gateways: fallbackGateways,
                     allowsFallback: true
                 ),
