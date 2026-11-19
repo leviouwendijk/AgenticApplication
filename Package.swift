@@ -197,6 +197,10 @@ let package = Package(
                     package: "AgenticDomains"
                 ),
                 .product(
+                    name: "AgenticGeneral",
+                    package: "AgenticDomains"
+                ),
+                .product(
                     name: "AgenticBusiness",
                     package: "AgenticDomains"
                 ),

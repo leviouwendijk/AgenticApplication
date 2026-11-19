@@ -1,5 +1,5 @@
 {
-  "originHash" : "41b995ed0798c540b97b861bfcfc76503b3c16f3b3b77457eadfc5394c824eec",
+  "originHash" : "3acc246e7d984400e93937242f53248fae157059ed038f06f4bd20ed5243069f",
   "pins" : [
     {
       "identity" : "accounting",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c398e71b1c3a21859561a525ac38f9e084759e94"
+        "revision" : "b54299c66c8adc7ac3a3de1cf8904f9ff12f7b18"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "63a5715cf6551718e98d9c5d9e93ec4386c2a90b"
+        "revision" : "8cdc63c07111aab2ce8acaa20f0af21d16dbe442"
       }
     },
     {
@@ -421,7 +421,7 @@
       "location" : "https://github.com/leviouwendijk/Mail.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c6bf0ebf8c2c345bdfc41d9543d2b68c6cd208cb"
+        "revision" : "e4cc538f7689a265c039898b12ef0995bae97b86"
       }
     },
     {
@@ -628,7 +628,16 @@
       "location" : "https://github.com/leviouwendijk/Sensitivity.git",
       "state" : {
         "branch" : "master",
-        "revision" : "993ac35191a1285ea9ec847b1a25cb6fdd39430a"
+        "revision" : "776687488c37d0d56faec1cb69676d41112da0e6"
+      }
+    },
+    {
+      "identity" : "sqlite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/SQLite.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0a871ee6bcb45375a583ff2cb9b34381325226cc"
       }
     },
     {

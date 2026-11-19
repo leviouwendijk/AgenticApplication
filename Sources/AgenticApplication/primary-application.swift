@@ -22,6 +22,7 @@ import AgenticAccounting
 import AgenticPDF
 import AgenticProcesses
 import AgenticDevelopment
+import AgenticGeneral
 import AgenticBusiness
 import AgenticScheduling
 import AgenticMail
@@ -145,6 +146,36 @@ public struct PrimaryApplication:
         ),
     ]
 
+    /// Every domain the application installs. `Generic` has all of them
+    /// available, so whatever the application can do, it can discover.
+    public static let installedDomains: [any Domain.Type] = [
+        Standard.self,
+        Harness.self,
+        Math.self,
+        Assertions.self,
+        Tasks.self,
+        Accounting.self,
+
+        SystemIO.self,
+        SwiftLang.self,
+        Git.self,
+        Web.self,
+        AppleServices.self,
+        AgenticUniFi.UniFi.self,
+        Media.self,
+        PDF.self,
+        Shell.self,
+        Sessions.self,
+        General.self,
+        Development.self,
+        Business.self,
+        Scheduling.self,
+        Email.self,
+        FrameLang.self,
+        Context.self,
+        Privacy.self,
+    ]
+
     public static let voiceInputProvider: (any VoiceInputProvider)? = AppleVoiceInputProvider()
 
     public static let application = Agentic.application(
@@ -154,39 +185,23 @@ public struct PrimaryApplication:
             "source": "agentic-cli",
         ]
     ) {
-        install(Standard.self)
-        install(Harness.self)
-        install(Math.self)
-        install(Assertions.self)
-        install(Tasks.self)
-        install(Accounting.self)
+        for domain in installedDomains {
+            install(domain)
+        }
 
-        install(SystemIO.self)
-        install(SwiftLang.self)
-        install(Git.self)
-        install(Web.self)
-        install(AppleServices.self)
-        install(AgenticUniFi.UniFi.self)
-        install(Media.self)
-        install(PDF.self)
-        install(Shell.self)
-        install(Sessions.self)
-        install(Development.self)
-        install(Business.self)
-        install(Scheduling.self)
-        install(Email.self)
-        install(FrameLang.self)
-        install(Context.self)
-        install(Privacy.self)
-
-        install(PrimaryDeveloper.self)
+        install(Generic.self)
+        install(Developer.self)
 
         launches {
             agent(
-                PrimaryDeveloper.self,
+                Generic.self,
+                title: "Generic"
+            )
+            agent(
+                Developer.self,
                 // Math.Agents.Mathematician.self,
                 // Accounting.Agents.Analyst.self,
-                title: "Primary Agent"
+                title: "Developer"
             )
         }
 
