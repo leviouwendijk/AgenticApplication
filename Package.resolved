@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "33225d02a078c7bbd0dd5638d1ff012dfd8fdaa0"
+        "revision" : "abd8e5107df5abdcd80ec8a61fa362779f529cb6"
       }
     },
     {
@@ -88,7 +88,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticProviders.git",
       "state" : {
         "branch" : "master",
-        "revision" : "6b4488d42d1100607d9a6cd8d11137afafb35d1a"
+        "revision" : "f62bb14153141c450380b8dd08d91ec7f40f7f31"
       }
     },
     {
@@ -115,7 +115,7 @@
       "location" : "https://github.com/leviouwendijk/Apple.git",
       "state" : {
         "branch" : "master",
-        "revision" : "80830dd2ca8a78bbfc46aa1b9bf0c7e276c05ed1"
+        "revision" : "479db2bd8b50289f23bc474db2b19d21e7645dd7"
       }
     },
     {
@@ -232,7 +232,7 @@
       "location" : "https://github.com/leviouwendijk/Errors.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ad3f44c682cbdf65bc9e096557b4af75fa3d5bb3"
+        "revision" : "3e20b181cec40d840b9346e0806dd0bfd369d447"
       }
     },
     {
@@ -250,7 +250,7 @@
       "location" : "https://github.com/leviouwendijk/Executable.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1486ca7a30b45f6eb3bc7a1357d98429f8034e3f"
+        "revision" : "75955eed488921506796e8a2bfcb59437555a1d3"
       }
     },
     {
@@ -863,6 +863,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "9f846f6bb04ec29a78480d9f45db41d68a2d27a9"
+      }
+    },
+    {
+      "identity" : "zipfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/weichsel/ZIPFoundation.git",
+      "state" : {
+        "revision" : "22787ffb59de99e5dc1fbfe80b19c97a904ad48d",
+        "version" : "0.9.20"
       }
     }
   ],
