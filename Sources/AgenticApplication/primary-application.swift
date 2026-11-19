@@ -197,12 +197,12 @@ public struct PrimaryApplication:
                 Generic.self,
                 title: "Generic"
             )
-            agent(
-                Developer.self,
-                // Math.Agents.Mathematician.self,
-                // Accounting.Agents.Analyst.self,
-                title: "Developer"
-            )
+            // agent(
+            //     Developer.self,
+            //     // Math.Agents.Mathematician.self,
+            //     // Accounting.Agents.Analyst.self,
+            //     title: "Developer"
+            // )
         }
 
         // install(PrimaryDeveloper.self)
