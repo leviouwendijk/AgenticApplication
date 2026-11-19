@@ -28,6 +28,8 @@ import AgenticMail
 import AgenticFrame
 import AgenticConfiguration
 import AgenticContext
+import AgenticSensitivity
+import Sensitivity
 
 // models
 import AgenticModels
@@ -89,8 +91,6 @@ public struct PrimaryApplication:
     AgenticFrameModulesProviding
 {
     public static func services(for sessionID: String?) throws -> ToolServices {
-        _ = sessionID
-
         var services = try ToolServices().inserting(
             Scheduling.ConfigurationStore.apple()
         )
@@ -104,6 +104,16 @@ public struct PrimaryApplication:
         services = try services.inserting(
             Context.Store(home: AgentHomeLocator().resolveHome())
         )
+        // Sensitive values reach models and session records as handles; the
+        // values stay in this session's vault, in memory (AGENTIC_VAULT=keychain
+        // keeps them in the Keychain for 24 hours, for resuming).
+        let vault: Sensitivity.Vault
+        if EnvironmentExtractor.optional("AGENTIC_VAULT") == "keychain", let sessionID {
+            vault = Sensitivity.Vault(store: Sensitivity.KeychainVaultStore(account: sessionID))
+        } else {
+            vault = Sensitivity.Vault()
+        }
+        services = try services.inserting(ToolPayloadGuarding(Privacy.Guard(vault: vault)))
 
         // check_environment_symbol reports which names the dev env file declares, never values.
         if let devEnv = EnvironmentExtractor.optional("DEV_ENV") {
@@ -171,6 +181,7 @@ public struct PrimaryApplication:
         install(Email.self)
         install(FrameLang.self)
         install(Context.self)
+        install(Privacy.self)
 
         install(PrimaryDeveloper.self)
 
