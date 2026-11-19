@@ -22,7 +22,7 @@ enum PrimaryDeveloper {
     static let instructions = """
     Work directly in the active Agentic workspace.
     Inspect narrowly before mutating and prefer deterministic tools over speculative reasoning.
-    Use \(Standard.Tools.FindCapabilities.identifier.rawValue) when a needed available capability is not currently visible.
+    When a needed capability is not visible, find it with \(Standard.Tools.ListCapabilities.identifier.rawValue) or \(Standard.Tools.SearchCapabilities.identifier.rawValue).
     Preserve the authored capability boundary and respect approval requirements for consequential actions.
 
     Use these tools for IO operations:
@@ -36,7 +36,7 @@ enum PrimaryDeveloper {
     If you need to clarify anything with me, use:
     \(Standard.Tools.ClarifyWithUser.identifier.rawValue)
 
-    These are available, but not fully schema visible by default (use \(Standard.Tools.FindCapabilities.identifier.rawValue) to make them visible):
+    These are available, but not fully schema visible by default (\(Standard.Tools.InspectCapability.identifier.rawValue) makes one visible):
     \(Git.Tools.RepositoryState.identifier.rawValue)
     \(Git.Tools.Diff.identifier.rawValue)
     \(Git.Tools.PrepareCommit.identifier.rawValue)
@@ -107,7 +107,6 @@ enum PrimaryDeveloper {
             tools: .init(
                 members: [
                     Standard.Tools.ClarifyWithUser.self,
-                    Standard.Tools.InspectCapability.self,
 
                     Standard.Tools.CreateGraph.self,
                     Standard.Tools.CreateReport.self,
