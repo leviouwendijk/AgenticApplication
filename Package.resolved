@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "14b90a5c0c9f098d4e34cc7b00d2df1d6637f509"
+        "revision" : "f8eca71052329e7791622fb1b425ea055e9a6e2a"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "664a310933c5acdaa68c9aeb71599486111384bd"
+        "revision" : "f170d85fcb0648f4f3e9d5af57a777b87aafe298"
       }
     },
     {
