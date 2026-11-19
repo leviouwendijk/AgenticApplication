@@ -71,7 +71,9 @@ agentic conversation --agent scheduling.agents.scheduler
 
 Mail reads the same configuration as the `email` command of the
 [Mail](https://github.com/leviouwendijk/Mail) library: every `.frame` file
-under `~/.config/mail`, at any depth. Set it up and verify it there first:
+under `.config/mail` of every root (your own `~/.config/mail`, then the shared
+roots in `~/.config/roots.frame`), at any depth. Set it up and verify it there
+first (`email path` shows what is read):
 
 ```sh
 email example > ~/.config/mail/accounts.frame
