@@ -26,6 +26,8 @@ enum Developer: AgentFork {
 
             SwiftLang.Tools.Build.self,
             SwiftLang.Tools.RunProduct.self,
+            SwiftLang.Tools.RunTests.self,
+            SwiftLang.Tools.RunBenchmarks.self,
             SwiftLang.Tools.Parse.self,
             SwiftLang.Tools.PackageUpdate.self
         )

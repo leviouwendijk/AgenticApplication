@@ -1,5 +1,5 @@
 {
-  "originHash" : "3acc246e7d984400e93937242f53248fae157059ed038f06f4bd20ed5243069f",
+  "originHash" : "db05044c33a9d9d8f59191a62eb5f7402bc8cd033680acb44e0d019728083b4c",
   "pins" : [
     {
       "identity" : "accounting",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f9c2d732aa324caa822e5aa0aa2e3b14eb4935de"
+        "revision" : "0da446c31bbe215e3d8e64c74a22de6a5e7dafec"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ba84f2fc36d1df798aebaecc0ac29a2696aa9dec"
+        "revision" : "9d1e4267886ea9553d0cae591eeb9c5b50271611"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "92fae47d1752510199788f0f50fb1549dfa83d78"
+        "revision" : "a767d5dc3f8bc520f7711e27b6c338dc7c120bc2"
       }
     },
     {
@@ -178,7 +178,7 @@
       "location" : "https://github.com/leviouwendijk/Concatenation.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ad1a424b769a77dc6d55524113f7085287342bd3"
+        "revision" : "58bccd02e5b4b0b28be65b7360cc202e5f57f45d"
       }
     },
     {
@@ -250,7 +250,7 @@
       "location" : "https://github.com/leviouwendijk/Executable.git",
       "state" : {
         "branch" : "master",
-        "revision" : "da2806e536377cbc20ee0c454b954bd050e10e4d"
+        "revision" : "cb6cc0888c21a99a436b52fcd87966b5a8b63de0"
       }
     },
     {
@@ -340,7 +340,7 @@
       "location" : "https://github.com/leviouwendijk/HTTP.git",
       "state" : {
         "branch" : "master",
-        "revision" : "66910639af97d3079c95b0c522c1fcaa3b88d1d8"
+        "revision" : "45bfff119cb36200022140bae8b676ef65c73e2f"
       }
     },
     {
@@ -556,7 +556,7 @@
       "location" : "https://github.com/leviouwendijk/Processes.git",
       "state" : {
         "branch" : "master",
-        "revision" : "afd2286a7d01dbdf378d54474eb2065a69e2d979"
+        "revision" : "6f6c4e2b98de070c925d49682add7bd58a0d588e"
       }
     },
     {
@@ -637,7 +637,7 @@
       "location" : "https://github.com/leviouwendijk/Sensitivity.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c943612b4b20175f96df075ade1471befde3c052"
+        "revision" : "67a91fbbdb0eeed41cbe9cde6ab0ca7874ef5837"
       }
     },
     {
@@ -776,6 +776,24 @@
       }
     },
     {
+      "identity" : "testflows",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/TestFlows.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "cce33b917f1bc5c4dd0536588a4aec4fe0832814"
+      }
+    },
+    {
+      "identity" : "testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Testing.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "abe024a50cfbe3ebab5e538e023d30616a35d3a2"
+      }
+    },
+    {
       "identity" : "timecode",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/leviouwendijk/Timecode.git",
@@ -844,7 +862,7 @@
       "location" : "https://github.com/leviouwendijk/Writers.git",
       "state" : {
         "branch" : "master",
-        "revision" : "3da92b9e3ceb3608f57f7de4896db4d5d385d4f9"
+        "revision" : "0b035b4ce663740e1b7cf08ed120f86dff51f5ad"
       }
     },
     {
