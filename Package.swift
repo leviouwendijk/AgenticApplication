@@ -12,7 +12,7 @@ let infoPlistPath = packagedirectory.appendingPathComponent(
 ).path
 
 let package = Package(
-    name: "AgenticCLI",
+    name: "AgenticApplication",
     platforms: [
         .macOS(.v26),
     ],
