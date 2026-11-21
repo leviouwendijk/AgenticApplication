@@ -9,8 +9,8 @@ Requires macOS 26 and a Swift 6.2 toolchain. Build and install with `sbm`
 (swift-build-manager) from this directory:
 
 ```sh
-git clone https://github.com/leviouwendijk/AgenticCLI.git
-cd AgenticCLI
+git clone https://github.com/leviouwendijk/AgenticApplication.git
+cd AgenticApplication
 sbm
 ```
 
