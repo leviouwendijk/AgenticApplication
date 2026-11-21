@@ -1,13 +1,10 @@
 import Executable;
 
 let package: Package = .{
-    .build = .{
-        .arguments = [
-            "--sign",
-            "apple-development",
-            "--sign-identifier",
-            "com.leviouwendijk.agentic",
-        ],
+    .sign = .{
+        .identity = .apple_development,
+        .identifier = "com.leviouwendijk.agentic",
+        .missing = .ad_hoc,
     },
     .deploy = .{ .products = ["agentic"] },
 };
