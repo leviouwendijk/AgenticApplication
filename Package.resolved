@@ -16,7 +16,7 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "6abe34f4970fd75808e1900e7804466d1529cc35"
+        "revision" : "febfe38053fd6c2b5b3c8f7c6cc58584b6e84c9f"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticDomains.git",
       "state" : {
         "branch" : "master",
-        "revision" : "7244ff0344e4e15dfd50714955f17d0d6626624f"
+        "revision" : "6804de79a358eba171b60fe282e654bd759e106f"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "2706c5ac60fb494c49af379e763620f77e422063"
+        "revision" : "4254590e9a5ff3e27de25a406bcb1b364f9be1d5"
       }
     },
     {
@@ -97,7 +97,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticRuntime.git",
       "state" : {
         "branch" : "master",
-        "revision" : "82c9f242a61e65375553f923304a821a2949f9d2"
+        "revision" : "8c171a21d8d11c0ef9ff89a3384a6623bfa89997"
       }
     },
     {
@@ -133,7 +133,7 @@
       "location" : "https://github.com/leviouwendijk/Atomos.git",
       "state" : {
         "branch" : "master",
-        "revision" : "d82fd2ccb56f9fafbb079435c4d70ff5207bfe8c"
+        "revision" : "857fa1b7d1975fe17d52e21c154f92ba5e696be3"
       }
     },
     {
@@ -232,7 +232,7 @@
       "location" : "https://github.com/leviouwendijk/Errors.git",
       "state" : {
         "branch" : "master",
-        "revision" : "66b044f9dbd2213b290d004aa9b19ab391ccf42e"
+        "revision" : "af4592f7389c1d43ef8d20155cd6da973b7e88b6"
       }
     },
     {
@@ -250,7 +250,7 @@
       "location" : "https://github.com/leviouwendijk/Executable.git",
       "state" : {
         "branch" : "master",
-        "revision" : "3a166c1995269de158fff0481b97039942818d2b"
+        "revision" : "954aeb7fa966ead6a7b3a6b68845a2645fc1bb43"
       }
     },
     {
@@ -430,7 +430,7 @@
       "location" : "https://github.com/leviouwendijk/Mail.git",
       "state" : {
         "branch" : "master",
-        "revision" : "b8a275fbc0b105432ce4aef37e7170256921e5ab"
+        "revision" : "059e7389e4c439ced26c7b8e3d049a79fec06c2d"
       }
     },
     {
@@ -547,7 +547,7 @@
       "location" : "https://github.com/leviouwendijk/Primitives.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1e381664d669a5769f3e634ddada47ade4305db1"
+        "revision" : "1e9c7defa2037e0b74be9e95d8e987442323d372"
       }
     },
     {
