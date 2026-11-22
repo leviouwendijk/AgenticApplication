@@ -1,5 +1,6 @@
 // core lib
 import Agentic
+import AgenticPresentation
 import Foundation
 import Frame
 import Milieu
@@ -151,6 +152,7 @@ public struct PrimaryApplication:
     /// available, so whatever the application can do, it can discover.
     public static let installedDomains: [any Domain.Type] = [
         Standard.self,
+        Capabilities.self,
         Harness.self,
         Math.self,
         Assertions.self,

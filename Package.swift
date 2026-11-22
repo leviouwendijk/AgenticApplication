@@ -126,6 +126,7 @@ let package = Package(
                     name: "AgenticInterfaces",
                     package: "AgenticInterfaces"
                 ),
+                .product(name: "AgenticPresentation", package: "AgenticInterfaces"),
 
                 // domains
                 // [core]
