@@ -153,6 +153,10 @@ let package = Package(
                     name: "AgenticTasks",
                     package: "Agentic"
                 ),
+                .product(
+                    name: "AgenticIntents",
+                    package: "Agentic"
+                ),
                 // [repositories]
                 .product(
                     name: "AgenticIO",

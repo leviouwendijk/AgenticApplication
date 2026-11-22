@@ -10,6 +10,7 @@ import AgenticSessions
 import AgenticHarness
 import AgenticMath
 import AgenticAssertions
+import AgenticIntents
 import AgenticTasks
 import AgenticIO
 import AgenticSwift
@@ -94,9 +95,9 @@ public struct PrimaryApplication:
         var services = try ToolServices().inserting(
             Scheduling.ConfigurationStore.apple()
         )
-        // Mail grants live for one session, starting empty: mail_request_access fills them.
+        // Mail grants live for one session, starting empty: mail_tool_request_access fills them.
         services = try services.inserting(Email.SessionAccess())
-        // frame_check reads what this program decodes, not a stale file.
+        // frame_tool_check reads what this program decodes, not a stale file.
         services = try services.inserting(
             FrameLang.Modules(compiled: [FrameAgenticModule.module, ContextFrame.module, SensitivityFrame.module] + frameModules)
         )
@@ -112,7 +113,7 @@ public struct PrimaryApplication:
             services = try services.inserting(lease)
         }
 
-        // check_environment_symbol reports which names the dev env file declares, never values.
+        // standard_tool_check_environment_symbol reports which names the dev env file declares, never values.
         if let devEnv = EnvironmentExtractor.optional("DEV_ENV") {
             services = try services.inserting(
                 EnvironmentSymbolSources([
@@ -154,6 +155,7 @@ public struct PrimaryApplication:
         Math.self,
         Assertions.self,
         Tasks.self,
+        Intents.self,
         Accounting.self,
 
         SystemIO.self,
