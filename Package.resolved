@@ -43,7 +43,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticHost.git",
       "state" : {
         "branch" : "master",
-        "revision" : "b916bf6dcb8611cf5775a19edae2180084dea804"
+        "revision" : "74c8f240ca46a591d688e6c27330afdcee9a29a6"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/leviouwendijk/AgenticMedia.git",
       "state" : {
         "branch" : "master",
-        "revision" : "9a19bd908a7cc7642eee1b20a1cdcdd87d9d7f1b"
+        "revision" : "c71ae89d546b95e62f980a6ee750257acfaf51e3"
       }
     },
     {
@@ -484,7 +484,7 @@
       "location" : "https://github.com/leviouwendijk/Parsers.git",
       "state" : {
         "branch" : "master",
-        "revision" : "71946b149369d217504e31638aa35f0bc41a1164"
+        "revision" : "492b6946afe0c977267944730b7000bfbcaebb6e"
       }
     },
     {
@@ -817,7 +817,7 @@
       "location" : "https://github.com/leviouwendijk/Transcribe.git",
       "state" : {
         "branch" : "master",
-        "revision" : "51f3040ee19a63144e1d19ca869b1b7903aa2006"
+        "revision" : "a947977bc5a8bcfd20b79d39f96bfac9833bbb6e"
       }
     },
     {
