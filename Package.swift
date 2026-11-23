@@ -316,7 +316,8 @@ let package = Package(
                 ),
             ]
         ),
-        // Needs Xcode's toolchain: CommandLineTools has no SwiftUI macros.
+        // Builds with CommandLineTools while its views avoid SwiftUI macros
+        // (`@State` needs Xcode's plugin; ViewPrimitives' `StoredState` does not).
         .executableTarget(
             name: "AgenticMacOS",
             dependencies: [
