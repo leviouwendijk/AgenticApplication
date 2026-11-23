@@ -10,3 +10,6 @@ xcuserdata/
 .env
 .env.*
 .env/*
+
+# local bundle; symlinks into .build until sbm assembles real bundles
+/AgenticMacOS.app/

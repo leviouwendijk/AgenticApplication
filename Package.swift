@@ -11,6 +11,10 @@ let infoPlistPath = packagedirectory.appendingPathComponent(
     "Support/Info.plist"
 ).path
 
+let macOSInfoPlistPath = packagedirectory.appendingPathComponent(
+    "Support/macos/Info.plist"
+).path
+
 let package = Package(
     name: "AgenticApplication",
     platforms: [
@@ -21,6 +25,13 @@ let package = Package(
             name: "agentic",
             targets: [
                 "AgenticCLI",
+            ]
+        ),
+        // The macOS app: the same application, in SwiftUI.
+        .executable(
+            name: "AgenticMacOS",
+            targets: [
+                "AgenticMacOS",
             ]
         ),
         // The application definition, shared with the macOS app.
@@ -301,6 +312,35 @@ let package = Package(
                         "-Xlinker", "__TEXT",
                         "-Xlinker", "__info_plist",
                         "-Xlinker", infoPlistPath,
+                    ]
+                ),
+            ]
+        ),
+        // Needs Xcode's toolchain: CommandLineTools has no SwiftUI macros.
+        .executableTarget(
+            name: "AgenticMacOS",
+            dependencies: [
+                "AgenticApplication",
+                .product(
+                    name: "AgenticRuntime",
+                    package: "AgenticRuntime"
+                ),
+                .product(
+                    name: "AgenticHost",
+                    package: "AgenticHost"
+                ),
+                .product(
+                    name: "AgenticMacUI",
+                    package: "AgenticHost"
+                ),
+            ],
+            linkerSettings: [
+                .unsafeFlags(
+                    [
+                        "-Xlinker", "-sectcreate",
+                        "-Xlinker", "__TEXT",
+                        "-Xlinker", "__info_plist",
+                        "-Xlinker", macOSInfoPlistPath,
                     ]
                 ),
             ]
