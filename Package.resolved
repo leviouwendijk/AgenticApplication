@@ -112,7 +112,7 @@
     {
       "identity" : "apple",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Apple.git",
+      "location" : "https://github.com/swift-sdk/Apple.git",
       "state" : {
         "branch" : "master",
         "revision" : "e42cb13e275bf570534ed9f1d17eca5dc7e4ef93"
@@ -139,7 +139,7 @@
     {
       "identity" : "awsconnector",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/AWSConnector.git",
+      "location" : "https://github.com/swift-sdk/AWSConnector.git",
       "state" : {
         "branch" : "master",
         "revision" : "0aac6de61379d5baf2a7cde8c98881701a7c72f1"
@@ -193,7 +193,7 @@
     {
       "identity" : "css",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/CSS.git",
+      "location" : "https://github.com/swift-dsl/CSS.git",
       "state" : {
         "branch" : "master",
         "revision" : "65f9672f9a158f10dae68d4707913c1b1fb7437e"
@@ -220,7 +220,7 @@
     {
       "identity" : "dsl",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/DSL.git",
+      "location" : "https://github.com/swift-dsl/DSL.git",
       "state" : {
         "branch" : "master",
         "revision" : "14b60217f2e8d6c94e9869ec6f81697aa416c55d"
@@ -274,7 +274,7 @@
     {
       "identity" : "frame",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Frame.git",
+      "location" : "https://github.com/lco-langs/Frame.git",
       "state" : {
         "branch" : "master",
         "revision" : "5db8db8a4126e819024c5ce29a23cb68b0ef093c"
@@ -292,7 +292,7 @@
     {
       "identity" : "grammar",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Grammar.git",
+      "location" : "https://github.com/swift-langs/Grammar.git",
       "state" : {
         "branch" : "master",
         "revision" : "44d68ca80d2ac5cf197bec66746d720136f19866"
@@ -328,7 +328,7 @@
     {
       "identity" : "html",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/HTML.git",
+      "location" : "https://github.com/swift-dsl/HTML.git",
       "state" : {
         "branch" : "master",
         "revision" : "78928f6b03aa5a5565c21812b5bc7ef66ed4f710"
@@ -346,7 +346,7 @@
     {
       "identity" : "ics",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/ICS.git",
+      "location" : "https://github.com/swift-dsl/ICS.git",
       "state" : {
         "branch" : "master",
         "revision" : "e898101739e70be1060ff5991904d782fe479fe5"
@@ -391,7 +391,7 @@
     {
       "identity" : "lexing",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Lexing.git",
+      "location" : "https://github.com/swift-langs/Lexing.git",
       "state" : {
         "branch" : "master",
         "revision" : "8af7b5e20aaf123d2908662c238ac5507c68298c"
@@ -427,7 +427,7 @@
     {
       "identity" : "mail",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Mail.git",
+      "location" : "https://github.com/swift-sdk/Mail.git",
       "state" : {
         "branch" : "master",
         "revision" : "059e7389e4c439ced26c7b8e3d049a79fec06c2d"
@@ -481,7 +481,7 @@
     {
       "identity" : "parsers",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Parsers.git",
+      "location" : "https://github.com/swift-langs/Parsers.git",
       "state" : {
         "branch" : "master",
         "revision" : "492b6946afe0c977267944730b7000bfbcaebb6e"
@@ -490,7 +490,7 @@
     {
       "identity" : "parsing",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Parsing.git",
+      "location" : "https://github.com/swift-langs/Parsing.git",
       "state" : {
         "branch" : "master",
         "revision" : "5f1e6085288011b7898bf3a8f476d1c347804f7d"
@@ -643,7 +643,7 @@
     {
       "identity" : "sqlite",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/SQLite.git",
+      "location" : "https://github.com/swift-dsl/SQLite.git",
       "state" : {
         "branch" : "master",
         "revision" : "d306a8b7cb84825d4ca85b8b5c0e797fecc73de9"
@@ -760,7 +760,7 @@
     {
       "identity" : "syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Syntax.git",
+      "location" : "https://github.com/swift-langs/Syntax.git",
       "state" : {
         "branch" : "master",
         "revision" : "89b38e4691c17c2328b8eb6dde5618d144266f73"
@@ -805,7 +805,7 @@
     {
       "identity" : "tokens",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Tokens.git",
+      "location" : "https://github.com/swift-langs/Tokens.git",
       "state" : {
         "branch" : "master",
         "revision" : "a52f358adda442f563771a318fc70d6a02c6b16e"
@@ -823,7 +823,7 @@
     {
       "identity" : "unifi",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/UniFi.git",
+      "location" : "https://github.com/swift-sdk/UniFi.git",
       "state" : {
         "branch" : "master",
         "revision" : "aefc75e0104ed82f05bf13311ad130c8bb00d59c"
