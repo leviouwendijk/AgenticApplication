@@ -66,7 +66,7 @@ let package = Package(
         ),
 
         .package(
-            url: "https://github.com/leviouwendijk/Milieu.git",
+            url: "https://github.com/swift-lco/Milieu.git",
             branch: "master"
         ),
         .package(
@@ -80,7 +80,7 @@ let package = Package(
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/IO.git",
+            url: "https://github.com/swift-lco/IO.git",
             branch: "master"
         ),
         .package(
