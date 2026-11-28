@@ -92,8 +92,8 @@ public struct PrimaryApplication:
     AgenticSessionServicesProviding,
     AgenticFrameModulesProviding
 {
-    public static func services(for sessionID: String?) throws -> ToolServices {
-        var services = try ToolServices().inserting(
+    public static func services(for sessionID: String?) throws -> CapabilityServices {
+        var services = try CapabilityServices().inserting(
             Scheduling.ConfigurationStore.apple()
         )
         // Mail grants live for one session, starting empty: mail_tool_request_access fills them.
